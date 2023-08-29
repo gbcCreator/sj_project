@@ -1,0 +1,366 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Abel&family=Allerta+Stencil&family=Caveat:wght@400;500;600;700&family=Dosis:wght@300;400;500;600;700&family=Handjet:wght@300;400&family=Indie+Flower&family=Inter:wght@200;300;400;500;600&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Poppins:wght@500;600;700;800&family=Raleway:wght@200;300;400;500;600&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@400;500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Abel&family=Allerta+Stencil&family=Caveat:wght@400;500;600;700&family=Dosis:wght@300;400;500;600;700&family=Handjet:wght@300;400&family=Indie+Flower&family=Inter:wght@200;300;400;500;600&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&family=Poppins:wght@500;600;700;800&family=Raleway:wght@200;300;400;500;600&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* scroll-behavior: smooth; */
+}
+
+
+/* use all code */
+:root{
+    --container_padding-left-right:3rem;
+    --font-family-roboto: 'Roboto', sans-serif;
+    --font-family-roboto-mono:'Roboto Mono', monospace;
+    --font-family-ubuntu:'Ubuntu', sans-serif;
+}
+
+.btn{
+padding-top: 1rem;
+}
+.btn a{
+    background-color: #813929;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: var(--font-family-ubuntu);
+    word-spacing: 0.1rem;
+    color: black;
+    background-color: white;
+    transition: all 0.3s linear;
+    font-weight: 500;
+}
+.btn a:hover{
+    /* background-color: rgb(230, 230, 166); */
+    box-shadow: 0px 0px 2rem rgb(196, 128, 128);
+    text-shadow: 0px 0px 2px black;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<------------Nav section start--------->>>>>>>>>>>>>>>>>>>... */
+.nav{
+    display: flex;
+    padding: 0.7rem var(--container_padding-left-right);
+    background-color: #813929;
+    justify-content: space-between;
+    /* position: sticky;
+    top: 0%;
+    z-index: 10; */
+    
+}
+.left-section img{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.mid-section{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+   
+}
+.mid-section a{
+    font-family: var(--font-family-roboto-mono);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    color:  #e87314 ;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+
+}
+.mid-section a:hover{
+    color: white;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    
+}
+.right-section svg{
+    transition: all 0.3s linear;
+}
+.right-section svg:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<------------Nav section start--------->>>>>>>>>>>>>>>>>>>... */
+.banner{
+    width: 100%;
+    height: 100vh;
+}
+.banner img{
+    width: 100%;
+}
+.sub-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+
+}
+
+.sub-banner-contain{
+    background-image: url('../grocery_img-collection/saroj website img collection/sub_down\ banner.webp');
+    max-width: 80%;
+    padding: 3rem 4rem;
+    background-repeat:round;
+}
+
+.sub-banner-contain h3{
+    /* max-width: 70%; */
+    text-align: center;
+}
+.sub-banner-contain .btn{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.festive_card-section h2{
+    text-align: center;
+    font-family: var(--font-family-ubuntu);
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: rgb(83, 69, 52);
+    text-transform: uppercase;
+}
+
+.card-box{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.third-section-container{
+    background-color: antiquewhite;
+    padding: 2rem 2rem;
+}
+.third-section{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+    align-items: center;
+    justify-content: space-around;
+}
+.third-section-contain h3{
+    font-family: var(--font-family-ubuntu);
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.forth-section{
+    padding-top: 4rem;
+}
+.forth-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family-roboto-mono);
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: rgb(123, 105, 80);
+
+}
+
+
+.six-section{
+    padding-top: 4rem;
+}
+
+
+.six-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family-roboto-mono);
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: rgb(123, 105, 80);
+}
+
+.seven{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 3rem; */
+    align-items: center;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+}
+.seven h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+.eight{
+    display: flex;
+    padding: 3rem 8rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.eight .left-eight h2{
+    font-family: var(--font-family-ubuntu);
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    padding-bottom: 0.6rem;
+}
+.eight .left-eight p{
+    max-width: 80%;
+    line-height: 1.4rem;
+    font-family: var(--font-family-ubuntu);
+    font-weight: 400;
+    color: #786561;
+}
+.text-area input{
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: none;
+    outline: none;
+    color: #624e3d;
+    font-family: var(--font-family-ubuntu);
+    font-size: 1.2rem;
+}
+.text-area button{
+    border: none;
+    padding: 0.6rem 1rem;
+    background-color: black;
+    color: white;
+    font-family: var(--font-family-ubuntu);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.text-area{
+    border: 0.5px solid black;
+}
+
+.box_container{
+    background-image: url("../grocery_img-collection/main/9.avif");
+    width: 40%;
+    height: 200px;
+    background-repeat: no-repeat;
+    /* filter: blur(1px); */
+    filter: blur(1px);
+}
+.overlay{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+
+}
+.overlay-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.nine{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.footer{
+    display: flex;
+   gap: 2rem;
+   justify-content: space-evenly;
+  padding: 3rem var(--container_padding-left-right);
+   background-color: #624e3d;
+}
+
+.footer .foooter_1 h3{
+    color: white;
+    font-family: var(--font-family-ubuntu);
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+.footer .foooter_1 p{
+    color: white;
+    line-height: 1.4rem;
+}
+.footer .foooter_1 p:hover{
+    color: black;
+}
+
+.foooter_2{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.foooter_2 h3{
+    color: white;
+}
+.foooter_2 a{
+    color: #e87314;
+transition:  all 0.3s linear;
+}
+.foooter_2 a:hover{
+    color: white;
+}
+
+.foooter_3{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    align-items: center;
+}
+.foooter_3 h3{
+    padding-bottom: 1rem;
+}
+.foooter_3 .social_link{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.foooter_3 .instagram{
+    color: black;
+}
+.foooter_3 .facebook{
+    color: black;
+}
+.foooter_3 .youtube{
+    color: black;
+}
+.foooter_3 .instagram:hover{
+    color: red;
+}
+.foooter_3 .facebook:hover{
+    color: blue;
+}
+.foooter_3 .youtube:hover{
+    color: red;
+}
+
+.footer-input-section h3{
+    color: white;
+    font-family: var(--font-family-ubuntu);
+    font-size: 1.5rem;;
+}
+.footer-input-section p{
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+.subfooter{
+    text-align: center;
+    background-color: #a05f51;
+    padding: 2rem var(--container_padding-left-right);
+}

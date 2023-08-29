@@ -1,0 +1,52 @@
+.card_container{
+    width: 24%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.card_img img{
+    width: 100%;
+}
+.card_contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card_contain h4{
+    color: rgb(152, 126, 93);
+    font-family: 'ADLaM Display', cursive;
+    max-width: 90%;
+    font-weight: 500;
+}
+.card_contain h5{
+    padding-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+  color: rgb(173, 169, 164);
+}
+
+.btn-order{
+    border: 0.5px solid black;
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: var(--font-family-ubuntu);
+    word-spacing: 0.1rem;
+    color: black;
+    background-color: white;
+    transition: all 0.3s linear;
+    font-weight: 500;
+}
+.btn-order:hover{
+    text-shadow: 0px 0px 2px red;
+    box-shadow: 0px 0px 12px red;
+    cursor: pointer;
+}
